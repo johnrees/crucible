@@ -54,7 +54,7 @@ automatically and do not need that call.
 ctx.add_program(&program_id, "path/to/program.so")?;
 ```
 
-LiteSVM 0.15 loads this as an immutable BPF Upgradeable Loader deployment: an executable
+LiteSVM 0.18 loads this as an immutable BPF Upgradeable Loader deployment: an executable
 `Program` account plus a separate `ProgramData` account whose upgrade authority is `None`. Tests
 that inspect or count program accounts must include both. If an instruction requires a matching
 upgrade authority, clone suitable loader accounts from RPC or seed the `ProgramData` explicitly;
@@ -140,7 +140,7 @@ match result {
 - `unwrap()` / `expect(msg)` - Panic on error with detailed message
 - `into_result()` - Convert to `Result<(), TxError>` for `?` operator
 
-LiteSVM 0.15 validates account locks even when signature verification is disabled. Failed
+LiteSVM 0.18 validates account locks even when signature verification is disabled. Failed
 transactions also retain their original execution error rather than replacing it with a later
 rent error. These are intentional validator-aligned semantics; `TxOutcome`'s public metadata
 shape is unchanged.
@@ -332,7 +332,7 @@ Crucible captures snapshots, so every traced, untraced, and state-pool SVM recei
 runtime-only values. Either setter returns an error after `take_snapshot()` freezes runtime
 configuration.
 
-See the [LiteSVM 0.15.2 migration guide](litesvm-0.15-migration.md) for compact-snapshot sysvar
+See the [LiteSVM 0.18.1 migration guide](litesvm-0.18-migration.md) for compact-snapshot sysvar
 limitations and the distinction between Crucible and raw LiteSVM defaults.
 
 ## Mock Pyth Oracles

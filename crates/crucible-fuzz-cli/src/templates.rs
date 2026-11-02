@@ -8,7 +8,7 @@ pub fn generate_cargo_toml(program_name: &str) -> String {
 name = "{program_name}_fuzz"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.89"
+rust-version = "1.97.1"
 
 [workspace]
 # Standalone workspace - isolated from parent project to avoid Solana version conflicts
@@ -21,7 +21,7 @@ crucible-idl-gen = "{version}"
 
 anchor-lang = "1.0.1"
 
-# Compatible client facade crates. LiteSVM 0.15.2 uses a mixed modular Solana
+# Compatible client facade crates. LiteSVM 0.18.1 uses a mixed modular Solana
 # graph internally, so these should not be blanket-upgraded to 4.x.
 # `serde` feature: generated native-program (bincode) arg structs derive
 # serde::Serialize, so Pubkey fields must implement it too.

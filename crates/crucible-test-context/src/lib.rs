@@ -1721,7 +1721,7 @@ pub struct ProgramData {
 /// Builder for a [`TestContext`].
 ///
 /// Crucible intentionally keeps the historical slot-zero default even though
-/// raw LiteSVM 0.15 instances start at [`litesvm::MAINNET_DEFAULT_SLOT`].
+/// raw LiteSVM 0.18 instances start at [`litesvm::MAINNET_DEFAULT_SLOT`].
 #[derive(Clone, Copy, Debug)]
 pub struct TestContextBuilder {
     initial_slot: u64,
@@ -5778,6 +5778,7 @@ mod tests {
                 data: vec![1, 2, 3, 4],
             },
             fee: 5000,
+            loaded_accounts_data_size: 0,
         };
 
         let outcome = tx_result_to_outcome(Ok(meta));
@@ -5817,6 +5818,7 @@ mod tests {
                     data: vec![0xFF],
                 },
                 fee: 7500,
+                loaded_accounts_data_size: 0,
             },
         };
 

@@ -2,7 +2,7 @@
 name = "test-program-fuzz"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.89"
+rust-version = "1.97.1"
 
 [workspace]
 # Standalone workspace to avoid conflicts with parent

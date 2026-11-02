@@ -2,7 +2,7 @@
 name = "staking_fuzz"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.89"
+rust-version = "1.97.1"
 
 [workspace]
 # Standalone workspace - isolated from parent to avoid Solana version conflicts

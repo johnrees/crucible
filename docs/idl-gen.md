@@ -1,7 +1,7 @@
 # Using crucible-idl-gen (Standalone Harnesses)
 
 For programs using different Solana versions than the fuzzer, `crucible-idl-gen` generates types
-from IDL without a crate dependency. This isolation is important with LiteSVM 0.15: its modular
+from IDL without a crate dependency. This isolation is important with LiteSVM 0.18: its modular
 Solana/Agave dependency graph intentionally spans compatible 3.x and 4.x crates, so harnesses
 should use Crucible's generated dependency set rather than forcing all `solana-*` packages to one
 major.

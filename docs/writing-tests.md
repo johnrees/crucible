@@ -29,14 +29,14 @@ let mut ctx = TestContext::builder()
     .initial_slot(250_000_000)
     .build();
 
-// Or use the mainnet feature-activation slot bundled with LiteSVM 0.15.2.
+// Or use the mainnet feature-activation slot bundled with LiteSVM 0.18.1.
 let mut ctx = TestContext::builder().mainnet_slot().build();
 ```
 
 The mainnet-slot convenience changes the Clock, not Crucible's all-features-enabled policy. Use
 `advance_slots` or `warp_to_slot` for later time changes. Programs that query epoch stake should
 also configure `set_epoch_stake`/`set_epoch_stakes` during `setup()` so the value is captured for
-every fuzzing SVM. See the [LiteSVM 0.15.2 migration guide](litesvm-0.15-migration.md).
+every fuzzing SVM. See the [LiteSVM 0.18.1 migration guide](litesvm-0.18-migration.md).
 
 ---
 

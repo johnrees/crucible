@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Built on <a href="https://github.com/AFLplusplus/LibAFL">LibAFL</a> and <a href="https://github.com/LiteSVM/litesvm/releases/tag/v0.15.2">LiteSVM 0.15.2</a> for fast, local transaction simulation with edge-level coverage tracking.
+  Built on <a href="https://github.com/AFLplusplus/LibAFL">LibAFL</a> and <a href="https://github.com/LiteSVM/litesvm/releases/tag/v0.18.1">LiteSVM 0.18.1</a> for fast, local transaction simulation with edge-level coverage tracking.
 </p>
 
 ---
@@ -20,7 +20,7 @@ Crucible enables property-based testing and stateful invariant checking for Sola
 
 Throughput depends heavily on the target program, tracing mode, state-pool growth, and worker
 count. Use a release build and benchmark the actual harness when comparing runtime versions;
-historical figures from earlier LiteSVM releases are not representative of 0.15.2.
+historical figures from earlier LiteSVM releases are not representative of 0.18.1.
 
 ## Features
 
@@ -66,7 +66,7 @@ crucible run <program_name> <test_name> --release
 | Topic | Description |
 |-------|-------------|
 | [Getting Started](docs/getting-started.md) | Setup, running, project structure, feature flags |
-| [LiteSVM 0.15.2 Migration](docs/litesvm-0.15-migration.md) | Runtime behavior, dependency, callback, sysvar, and snapshot changes |
+| [LiteSVM 0.18.1 Migration](docs/litesvm-0.18-migration.md) | Runtime behavior, dependency, callback, sysvar, and snapshot changes |
 | [IDL Code Generation](docs/idl-gen.md) | Using `crucible-idl-gen` for standalone harnesses |
 | [API Reference](docs/api-reference.md) | TestContext API — program loading, accounts, transactions, RPC cloning, time, oracles |
 | [Writing Tests](docs/writing-tests.md) | Fixtures, actions, range constraints, simple & invariant fuzzing, assertion macros |

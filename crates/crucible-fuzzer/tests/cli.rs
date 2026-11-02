@@ -2839,8 +2839,8 @@ fn test_init_cargo_toml_has_features() {
         "should have invariant_test feature"
     );
     assert!(
-        content.contains("rust-version = \"1.89\""),
-        "generated harnesses should declare the LiteSVM 0.15 MSRV"
+        content.contains("rust-version = \"1.97.1\""),
+        "generated harnesses should declare the LiteSVM 0.18 MSRV"
     );
     assert!(
         content.contains("solana-keypair = \"3.1.2\"")
