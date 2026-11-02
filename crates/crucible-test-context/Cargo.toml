@@ -18,6 +18,7 @@ borsh = "1.5"
 
 # Client facades and LiteSVM's Agave runtime types.
 agave-feature-set.workspace = true
+solana-fee.workspace = true
 solana-pubkey.workspace = true
 solana-keypair.workspace = true
 solana-signer.workspace = true

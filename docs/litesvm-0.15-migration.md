@@ -1,7 +1,10 @@
 # LiteSVM 0.15.2 Migration
 
-Crucible is pinned to [LiteSVM 0.15.2](https://github.com/LiteSVM/litesvm/releases/tag/v0.15.2).
-The minimum supported Rust version is 1.89.
+Historical guide for the 0.15.2 upgrade. For the current dependency set and runtime,
+see the [LiteSVM 0.18.1 migration guide](litesvm-0.18-migration.md).
+
+This migration pinned Crucible to [LiteSVM 0.15.2](https://github.com/LiteSVM/litesvm/releases/tag/v0.15.2).
+The minimum supported Rust version for that migration was 1.89.
 
 This upgrade changes several runtime details that harness authors may observe. Crucible preserves
 its established defaults where they are part of the testing API, but otherwise follows the

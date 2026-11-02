@@ -2,7 +2,7 @@
 name = "account_mutations_examples_fuzz"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.89"
+rust-version = "1.97.1"
 
 [workspace]
 # Standalone workspace - isolated from parent project to avoid Solana version conflicts
